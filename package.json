@@ -1,0 +1,16 @@
+{
+  "name": "small-worlds-survival-sandboxes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --format=esm --minify --outfile=game.js",
+    "start": "python3 -m http.server 8774"
+  },
+  "dependencies": {
+    "three": "0.152.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.11"
+  }
+}
