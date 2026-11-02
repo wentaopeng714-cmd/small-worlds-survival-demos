@@ -1,32 +1,32 @@
-# Small Worlds
+# Small Worlds — Second Edition
 
-Ten touch-friendly 3D survival sandbox demos. Each connects gathering to a useful change in the world, with a different core mechanic, named character look, three short stages, original synthesized audio, and an actual-scene PNG postcard.
+Ten short browser survival sandboxes with different core inputs, scene composition, cameras and interfaces. The collection and every individual ZIP run from a root `index.html`. JavaScript, Three.js, character animations and GLB materials are bundled locally; no runtime CDN or API is required.
 
-| Game | Core interaction |
-|---|---|
-| Roof Before Rain | Build a tent, drainage and raised storage; test them in rain. |
-| Make Way for Water | Gather stone; place and reclaim levees; divert two streams. |
-| Driftwood Deck | Catch drifting logs; extend a raft; balance shelter and cargo. |
-| One More Ember | Feed a fire; turn windbreaks; upgrade the hearth and canopy. |
-| Bridge to Better Days | Bridge islands; craft a pickaxe; open useful resource routes. |
-| One Lantern Deep | Open ore-bearing rock; bank loads; improve light and supports. |
-| Logline Workshop | Process logs; route visible planks; build an automatic feeder. |
-| Shelter That Grows | Make beds; plant and water hedges; grow storm protection. |
-| Sunwise Outpost | Salvage; align solar panels; store power and supply a habitat. |
-| Echo Camp | Perform resource trips once; actual recorded paths become workers. |
+| Game | Main interaction | Camera |
+|---|---|---|
+| Roof Before Rain | Fit short/long boards, seal seams, build drainage and raised storage | Cabin cutaway |
+| Make Way for Water | Salvage stone; rotate gates to solve three water networks | Full overhead map |
+| Driftwood Deck | Steer, rescue floating wood, balance cargo, build shelter and outriggers | Moving boat chase view |
+| One More Ember | Spend a small hand of supplies before each weather turn | Camp overhead + weather + cards |
+| Bridge to Better Days | Tap to jump; lash permanent bridge checkpoints | Side-follow canyon |
+| One Lantern Deep | Dig connected tunnels, haul ore, upgrade lamp, supports and cargo lift | Mine side cutaway |
+| Logline Workshop | Saw along a line, tap nails, install useful workshop parts | First-person workbench |
+| Shelter That Grows | Draw rooted vines, gather dew, prune and grow a rain-blocking canopy | Plant close-up |
+| Sunwise Outpost | Rotate a planet, salvage scrap, build a solar/storage/night power network | Orbital planet |
+| Echo Camp | Record real footsteps, replay two selves, schedule a plate release | Camp stage + tracks |
 
-## Play and build
+Each has a complete short progression, restart/pause, sound controls and a downloadable PNG of the actual world and run statistics. Native file sharing opens on supporting devices; otherwise Share downloads the same PNG. It does not send to a recipient automatically.
 
-Serve this folder over HTTP, e.g. `python3 -m http.server 8774`, and open `http://localhost:8774/`. GLBs use relative URLs and are bundled. No keys, external CDNs, camera or microphone are required. Touch or mouse selects resources; contextual buttons perform work. Start with sound unlocks audio; the top music button mutes it.
+## Run / build
 
-`npm install` and `npm run build` rebuild the bundled game from `src/`. The provided `game.js` is ready to run without installing anything. A single-game ZIP has its preset in root `index.html` and only its required model files. Use those ZIPs for separate Loopit works. The collection ZIP contains all ten and a selection lobby.
+Serve the folder over HTTP, e.g. `python3 -m http.server 8777`, then open `http://localhost:8777/`. Do not open via `file://`.
 
-Postcards contain the rendered scene and real run statistics. Device sharing is used when available; otherwise Share downloads a PNG. Best time and completed-run count are stored locally; mid-run progress is not persisted. Character appearances combine four KayKit Adventurers bases plus a hooded Rogue variant, recoloring, and custom bone-attached accessories; they are not ten independently authored base meshes.
+To rebuild: `npm install` then `npm run build`. Published ZIPs already include the built `game.js` and all required assets. No build is needed to play or import. Standalone packages set `data-preset` on the body to start their own world.
 
-See `SOURCES.md`, `licenses/`, and `QA.zh-CN.md` for asset provenance and tested scope.
+## Art / assets
 
-## Downloads
+The images in `previews/` are real playable screenshots, not concept images. Live graphics use locally bundled CC0 KayKit GLBs, real skeletal clips and procedural geometry, materials, light and particles. Seven games show characters using four base character meshes with costume/colour variants; three deliberately use a map, workbench or planet as the focus. These are playable interpretations of the reference directions, not reproductions of the generated reference artwork.
 
-[All ten individual Loopit ZIPs](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/all-ten-loopit-zips.zip) · [Playable collection ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/small-worlds-collection.zip)
+Code: MIT. Third-party models / animations: CC0. Three.js: MIT. See `LICENSE`, `SOURCES.md` and `licenses/`.
 
-See [individual downloads and import text](LOOPIT-IMPORT.zh-CN.md).
+V1 is preserved in the separate v1.0.0 GitHub release. V2 changes the play mechanics rather than replacing only the scenery.

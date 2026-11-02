@@ -1,26 +1,17 @@
-# Loopit 单款导入
+# 导入 Loopit
 
-每个作品使用对应的单款 ZIP。模型、动画、页面代码都已打包，根目录入口是 `index.html`。
+每一款已单独打包，ZIP 根目录直接含 index.html / game.js / style.css / assets。
 
-可以将下方链接放进这句英文：
+1. 选择单款的 ZIP 下载直链，粘贴到 Loopit 的创作输入框。不要把十个 ZIP 的合集压缩包作为单款游戏导入。
+2. 连同下面的英文说明发送；若页面挂有失效的参考图片，先在 Loopit 界面删除该引用，再重试。模型全部随包提供，不需要上传 GLB。
+3. 生成后检查第一步操作、核心成长、结果、静音和重新开始。ZIP 已在本地实测，Loopit 的导入和重新生成仍需在其预览中验证。
 
-```text
-Import the finished game from this ZIP: [paste one ZIP URL here]. Use the root index.html as the entry point. Preserve the bundled models, animations, gameplay, sound controls, restart, and actual-scene PNG export. All required assets are inside the ZIP; keep their relative paths. Do not rebuild the game from a screenshot.
+```
+Import the complete playable game from this ZIP:
+PASTE_ONE_GAME_ZIP_LINK_HERE
+Use its root index.html as the entry point. Preserve the implemented gameplay, custom camera, English UI, models, animations, sound and result export. Keep all bundled assets and relative paths together. Do not replace the actual models or rebuild it as a generic gathering-and-build menu. The package is self-contained and needs no reference image. Make it load and play first. Show the real error on screen if importing or asset loading fails.
 ```
 
-| 作品 | 单款 ZIP |
-|---|---|
-| Roof Before Rain | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/roof-before-rain.zip) |
-| Make Way for Water | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/make-way-for-water.zip) |
-| Driftwood Deck | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/driftwood-deck.zip) |
-| One More Ember | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/one-more-ember.zip) |
-| Bridge to Better Days | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/bridge-to-better-days.zip) |
-| One Lantern Deep | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/one-lantern-deep.zip) |
-| Logline Workshop | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/logline-workshop.zip) |
-| Shelter That Grows | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/shelter-that-grows.zip) |
-| Sunwise Outpost | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/sunwise-outpost.zip) |
-| Echo Camp | [Download ZIP](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v1.0.0/echo-camp.zip) |
+合集 small-worlds-v2-collection.zip 是含十款游戏的完整本地试玩入口；all-ten-loopit-v2-zips.zip 内是十个独立导入包，先解压后选择一款。
 
-发布时使用表格中的英文标题，推荐语见 `games.csv`，话题选择 `SurvivalSandbox`。正式发布前还应在 Loopit 预览内试玩确认导入结果。
-
-`small-worlds-collection.zip` 是含大厅的十款合集；`all-ten-loopit-zips.zip` 解压后是十个独立 ZIP，请从中选取单款导入。
+发布时使用与内容一致的英文标题；话题选择 SurvivalSandbox；推荐语可从 games.csv 复制后按实际版本调整。是否达 A / S 仍以最终 Loopit 成品实际表现与审核为准。

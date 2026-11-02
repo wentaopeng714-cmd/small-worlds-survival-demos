@@ -1,75 +1,85 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "games": [
     {
       "id": "roof",
       "title": "Roof Before Rain",
-      "file": "roof-before-rain.zip",
-      "bytes": 1414300,
-      "sha256": "630bb5019c55e80bf8b860a5c0edc5e50322be5af04f9b2341fb19ad527351f8"
+      "file": "roof-before-rain-v2.zip",
+      "bytes": 1455465,
+      "sha256": "0fd06e0cc1f65edbe3ef69743782c1ca855c672d1d1dfc0b32efa2f56fa59944",
+      "bundledModels": 21
     },
     {
       "id": "water",
       "title": "Make Way for Water",
-      "file": "make-way-for-water.zip",
-      "bytes": 1402396,
-      "sha256": "90052cf7c78a08debaf26cd3f09a8773ce6c8483ae8c844dd0f0d355dbd8819a"
+      "file": "make-way-for-water-v2.zip",
+      "bytes": 975064,
+      "sha256": "11cbd212fe428b08c375c0e0fe8db59481034179b09b9e21d7cd788a4fc3d32b",
+      "bundledModels": 19
     },
     {
       "id": "raft",
       "title": "Driftwood Deck",
-      "file": "driftwood-deck.zip",
-      "bytes": 1381601,
-      "sha256": "a56e1d70e739c4f967ff64527db8619024ab16c47b12d0a2216ac22666ded55b"
+      "file": "driftwood-deck-v2.zip",
+      "bytes": 1395320,
+      "sha256": "b6f645a4296f76c1eada32fbd7e8272e14112efb0f89a99abefa190498afdd16",
+      "bundledModels": 20
     },
     {
       "id": "ember",
       "title": "One More Ember",
-      "file": "one-more-ember.zip",
-      "bytes": 1363065,
-      "sha256": "5f9ce3b170f6dfde03ad41ce00909e36427b937d24ade59af7da0ed2ff04983f"
+      "file": "one-more-ember-v2.zip",
+      "bytes": 1414449,
+      "sha256": "6cc8d5a20854c9352bde54a53ce96e5e9d995dae9550d2eabd0ad86c16089fd6",
+      "bundledModels": 20
     },
     {
       "id": "bridge",
       "title": "Bridge to Better Days",
-      "file": "bridge-to-better-days.zip",
-      "bytes": 1320410,
-      "sha256": "7b981ca60967b33dfc178246eeb93e4657a960872e880b2ce718548863d5ca2e"
+      "file": "bridge-to-better-days-v2.zip",
+      "bytes": 1383525,
+      "sha256": "5c38b18ecfaae88874441d1ba0138fffc85befca8a9221d81eca2477a2b1e1ad",
+      "bundledModels": 20
     },
     {
       "id": "quarry",
       "title": "One Lantern Deep",
-      "file": "one-lantern-deep.zip",
-      "bytes": 1381592,
-      "sha256": "484d7f434f5bfa966749f3242b85d32ea3c372f2577d5e6fc82412c0e1406048"
+      "file": "one-lantern-deep-v2.zip",
+      "bytes": 1419325,
+      "sha256": "fa3b5ce27906d0f8258a0b72729a42931bdc034e1a25a04e76004418bfc49834",
+      "bundledModels": 20
     },
     {
       "id": "logline",
       "title": "Logline Workshop",
-      "file": "logline-workshop.zip",
-      "bytes": 1452249,
-      "sha256": "96884c5b19fef52338d1dc3b16f3047be31361f941460b470bb47cc1e0324911"
+      "file": "logline-workshop-v2.zip",
+      "bytes": 979665,
+      "sha256": "0cb559b32665367fc1bce3658d790dab8d24716e9413feb460dadf836f1eb66a",
+      "bundledModels": 19
     },
     {
       "id": "grow",
       "title": "Shelter That Grows",
-      "file": "shelter-that-grows.zip",
-      "bytes": 1356308,
-      "sha256": "5a564ae144067319da2f30ad00bdc44f32e4d96d829c17694bae10645480138d"
+      "file": "shelter-that-grows-v2.zip",
+      "bytes": 1388957,
+      "sha256": "0d1ea6901b9372f2ec610b1ded01f13114641dc19abb96372c7bebf04aa88303",
+      "bundledModels": 20
     },
     {
       "id": "solar",
       "title": "Sunwise Outpost",
-      "file": "sunwise-outpost.zip",
-      "bytes": 1466330,
-      "sha256": "326a964214cb75510daa2bf4caa307e3be196ccad0f93478f8e939b15b744289"
+      "file": "sunwise-outpost-v2.zip",
+      "bytes": 1054403,
+      "sha256": "992db871ed921a0fc24d5f64c2a66987459d399176634e91b0d0bfe50f7896b7",
+      "bundledModels": 22
     },
     {
       "id": "echo",
       "title": "Echo Camp",
-      "file": "echo-camp.zip",
-      "bytes": 1414262,
-      "sha256": "a80e0462f85398dc15ef22963e6c9be87cc2f0c14ba1ad2c9d055b97b0f25b3a"
+      "file": "echo-camp-v2.zip",
+      "bytes": 1402759,
+      "sha256": "026d05891f4f89abb4323dc4289b9ca2134a4a440b0673f22000c488eb52b234",
+      "bundledModels": 20
     }
   ]
 }
