@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {stepBalance,swellAt,impact,rating,ROUTES,seeded} from '../src/games/raft-rules.js';
+const simulate=(target,{floats=false,pump=false,stage=3}={})=>{let s={cargo:0,velocity:0,roll:0,flood:0},peak=0;for(let t=-2.5;t<6;t+=.01){stepBalance(s,.01,{cargoTarget:t<4.5?target:0,wave:swellAt(t,stage),floats,pump});if(t>1&&t<4)peak=Math.max(peak,Math.abs(s.roll));}return{...s,peak};};
+const correct=simulate(1.12),idle=simulate(0),wrong=simulate(-1.12),wide=simulate(0,{floats:true});
+assert(correct.peak<idle.peak*.5,'opposite cargo must visibly cancel the swell');assert(wrong.flood>idle.flood+25,'wrong-side cargo must make flooding worse');assert(wide.peak<idle.peak,'outriggers must reduce actual roll');
+let wet={cargo:0,velocity:0,roll:0,flood:45},dry={...wet};for(let i=0;i<100;i++){stepBalance(wet,.02,{});stepBalance(dry,.02,{pump:true});}assert(dry.flood<wet.flood-1,'bilge pump must actually drain faster');
+let s={flood:10};assert.deepEqual(impact(s,{wood:4}),{wood:3,lost:1});assert.equal(s.flood,31);s={flood:10};assert.deepEqual(impact(s,{wood:4,net:true,floats:true}),{wood:4,lost:0});assert.equal(s.flood,25);
+assert.equal(rating({hits:0,helps:0,saved:9,total:9}),'GOLD');assert.notEqual(rating({hits:1,helps:0,saved:9,total:9}),'GOLD');assert.equal(ROUTES[0].swells.length,0);assert(ROUTES[3].seconds>ROUTES[0].seconds*2);assert.equal(ROUTES.reduce((n,r)=>n+r.swells.length,0),9);
+const a=seeded(77),b=seeded(77),c=seeded(78);assert.deepEqual(Array.from({length:10},a),Array.from({length:10},b));assert.notEqual(b(),c());
+console.log('PASS: counterweight, wrong-side flooding, functional floats/pump/net, resource loss, rating, progression and deterministic replay.');console.log({correctFlood:correct.flood,idleFlood:idle.flood,wrongFlood:wrong.flood,baseRoll:idle.peak,floatRoll:wide.peak});

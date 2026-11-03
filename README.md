@@ -1,32 +1,26 @@
-# Small Worlds — Second Edition
+# Small Worlds - Selected Eight
 
-Ten short browser survival sandboxes with different core inputs, scene composition, cameras and interfaces. The collection and every individual ZIP run from a root `index.html`. JavaScript, Three.js, character animations and GLB materials are bundled locally; no runtime CDN or API is required.
+Demos 03-10 are active. Demo 03 is now **Driftwood Deck - Captain's Cut 2.1.0**, with a longer mobile survival voyage and physical side-swell/cargo play. Demos04-10 keep their distinct 2.0.0 mechanics and cameras. Demos 01/02 and all prior releases remain archived.
 
-| Game | Main interaction | Camera |
+| Demo | Game | Current ZIP |
 |---|---|---|
-| Roof Before Rain | Fit short/long boards, seal seams, build drainage and raised storage | Cabin cutaway |
-| Make Way for Water | Salvage stone; rotate gates to solve three water networks | Full overhead map |
-| Driftwood Deck | Steer, rescue floating wood, balance cargo, build shelter and outriggers | Moving boat chase view |
-| One More Ember | Spend a small hand of supplies before each weather turn | Camp overhead + weather + cards |
-| Bridge to Better Days | Tap to jump; lash permanent bridge checkpoints | Side-follow canyon |
-| One Lantern Deep | Dig connected tunnels, haul ore, upgrade lamp, supports and cargo lift | Mine side cutaway |
-| Logline Workshop | Saw along a line, tap nails, install useful workshop parts | First-person workbench |
-| Shelter That Grows | Draw rooted vines, gather dew, prune and grow a rain-blocking canopy | Plant close-up |
-| Sunwise Outpost | Rotate a planet, salvage scrap, build a solar/storage/night power network | Orbital planet |
-| Echo Camp | Record real footsteps, replay two selves, schedule a plate release | Camp stage + tracks |
+| 03 | Driftwood Deck | [Download v2.1.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.1.0/driftwood-deck-captains-cut-v2.1.0.zip) |
+| 04 | One More Ember | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/one-more-ember-v2.zip) |
+| 05 | Bridge to Better Days | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/bridge-to-better-days-v2.zip) |
+| 06 | One Lantern Deep | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/one-lantern-deep-v2.zip) |
+| 07 | Logline Workshop | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/logline-workshop-v2.zip) |
+| 08 | Shelter That Grows | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/shelter-that-grows-v2.zip) |
+| 09 | Sunwise Outpost | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/sunwise-outpost-v2.zip) |
+| 10 | Echo Camp | [Download v2.0.0](https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/echo-camp-v2.zip) |
 
-Each has a complete short progression, restart/pause, sound controls and a downloadable PNG of the actual world and run statistics. Native file sharing opens on supporting devices; otherwise Share downloads the same PNG. It does not send to a recipient automatically.
+[Raft gameplay, controls and import notes](DRIFTWOOD-CAPTAINS-CUT.md) - [Raft validation](QA-raft-v2.1.md)
 
-## Run / build
+Every independent ZIP has a root index.html and bundles Three.js, models, animations and textures locally. No runtime API or CDN is required. English UI, touch controls, sound/mute, pause/restart and actual-world PNG results are included. Supporting devices use native file sharing; otherwise Share downloads the PNG.
 
-Serve the folder over HTTP, e.g. `python3 -m http.server 8777`, then open `http://localhost:8777/`. Do not open via `file://`.
+## Run / rebuild
 
-To rebuild: `npm install` then `npm run build`. Published ZIPs already include the built `game.js` and all required assets. No build is needed to play or import. Standalone packages set `data-preset` on the body to start their own world.
+Serve the repository over HTTP, then open root index.html. To rebuild, npm install then npm run build. Published game ZIPs already contain the built bundle. See manifest.json for per-game versions and hashes.
 
-## Art / assets
+The previews are actual playable screenshots. Live visuals combine CC0 KayKit GLBs, real skeletal clips and procedural geometry/material/light/effects. They are playable interpretations of the reference directions.
 
-The images in `previews/` are real playable screenshots, not concept images. Live graphics use locally bundled CC0 KayKit GLBs, real skeletal clips and procedural geometry, materials, light and particles. Seven games show characters using four base character meshes with costume/colour variants; three deliberately use a map, workbench or planet as the focus. These are playable interpretations of the reference directions, not reproductions of the generated reference artwork.
-
-Code: MIT. Third-party models / animations: CC0. Three.js: MIT. See `LICENSE`, `SOURCES.md` and `licenses/`.
-
-V1 is preserved in the separate v1.0.0 GitHub release. V2 changes the play mechanics rather than replacing only the scenery.
+Code MIT. KayKit assets CC0; Three.js MIT. See LICENSE, SOURCES.md and licenses/. No Loopit project was overwritten or published by this repository update.

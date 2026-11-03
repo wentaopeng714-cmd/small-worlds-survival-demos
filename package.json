@@ -1,11 +1,12 @@
 {
   "name": "small-worlds-survival-sandboxes",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=esm --minify --outfile=game.js",
-    "start": "python3 -m http.server 8777"
+    "start": "python3 -m http.server 8777",
+    "test:raft": "node tests/raft-rules.mjs"
   },
   "dependencies": {
     "three": "0.152.2"

@@ -1,29 +1,19 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
+  "activeRange": "03-10",
+  "archiveRelease": "v2.0.0",
   "games": [
-    {
-      "id": "roof",
-      "title": "Roof Before Rain",
-      "file": "roof-before-rain-v2.zip",
-      "bytes": 1455465,
-      "sha256": "0fd06e0cc1f65edbe3ef69743782c1ca855c672d1d1dfc0b32efa2f56fa59944",
-      "bundledModels": 21
-    },
-    {
-      "id": "water",
-      "title": "Make Way for Water",
-      "file": "make-way-for-water-v2.zip",
-      "bytes": 975064,
-      "sha256": "11cbd212fe428b08c375c0e0fe8db59481034179b09b9e21d7cd788a4fc3d32b",
-      "bundledModels": 19
-    },
     {
       "id": "raft",
       "title": "Driftwood Deck",
-      "file": "driftwood-deck-v2.zip",
-      "bytes": 1395320,
-      "sha256": "b6f645a4296f76c1eada32fbd7e8272e14112efb0f89a99abefa190498afdd16",
-      "bundledModels": 20
+      "file": "driftwood-deck-captains-cut-v2.1.0.zip",
+      "bytes": 1427264,
+      "sha256": "2bb4a9b4b3d738a367ec70c6725b38d7c8a43e71c6ac2d7c100eafdc23c2a178",
+      "bundledModels": 20,
+      "release": "v2.1.0",
+      "models": 20,
+      "version": "2.1.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.1.0/driftwood-deck-captains-cut-v2.1.0.zip"
     },
     {
       "id": "ember",
@@ -31,7 +21,9 @@
       "file": "one-more-ember-v2.zip",
       "bytes": 1414449,
       "sha256": "6cc8d5a20854c9352bde54a53ce96e5e9d995dae9550d2eabd0ad86c16089fd6",
-      "bundledModels": 20
+      "bundledModels": 20,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/one-more-ember-v2.zip"
     },
     {
       "id": "bridge",
@@ -39,7 +31,9 @@
       "file": "bridge-to-better-days-v2.zip",
       "bytes": 1383525,
       "sha256": "5c38b18ecfaae88874441d1ba0138fffc85befca8a9221d81eca2477a2b1e1ad",
-      "bundledModels": 20
+      "bundledModels": 20,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/bridge-to-better-days-v2.zip"
     },
     {
       "id": "quarry",
@@ -47,7 +41,9 @@
       "file": "one-lantern-deep-v2.zip",
       "bytes": 1419325,
       "sha256": "fa3b5ce27906d0f8258a0b72729a42931bdc034e1a25a04e76004418bfc49834",
-      "bundledModels": 20
+      "bundledModels": 20,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/one-lantern-deep-v2.zip"
     },
     {
       "id": "logline",
@@ -55,7 +51,9 @@
       "file": "logline-workshop-v2.zip",
       "bytes": 979665,
       "sha256": "0cb559b32665367fc1bce3658d790dab8d24716e9413feb460dadf836f1eb66a",
-      "bundledModels": 19
+      "bundledModels": 19,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/logline-workshop-v2.zip"
     },
     {
       "id": "grow",
@@ -63,7 +61,9 @@
       "file": "shelter-that-grows-v2.zip",
       "bytes": 1388957,
       "sha256": "0d1ea6901b9372f2ec610b1ded01f13114641dc19abb96372c7bebf04aa88303",
-      "bundledModels": 20
+      "bundledModels": 20,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/shelter-that-grows-v2.zip"
     },
     {
       "id": "solar",
@@ -71,7 +71,9 @@
       "file": "sunwise-outpost-v2.zip",
       "bytes": 1054403,
       "sha256": "992db871ed921a0fc24d5f64c2a66987459d399176634e91b0d0bfe50f7896b7",
-      "bundledModels": 22
+      "bundledModels": 22,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/sunwise-outpost-v2.zip"
     },
     {
       "id": "echo",
@@ -79,7 +81,9 @@
       "file": "echo-camp-v2.zip",
       "bytes": 1402759,
       "sha256": "026d05891f4f89abb4323dc4289b9ca2134a4a440b0673f22000c488eb52b234",
-      "bundledModels": 20
+      "bundledModels": 20,
+      "release": "v2.0.0",
+      "download": "https://github.com/wentaopeng714-cmd/small-worlds-survival-demos/releases/download/v2.0.0/echo-camp-v2.zip"
     }
   ]
 }
